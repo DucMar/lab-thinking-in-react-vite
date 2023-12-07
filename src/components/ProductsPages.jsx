@@ -1,7 +1,7 @@
-import React from 'react';
-import SearchBar from './SearchBar';
-import ProductTable from './ProductTable';
-import jsonData from "./../../data.json";
+import React, { useState } from "react";
+import SearchBar from "./SearchBar";
+import ProductTable from "./ProductTable";
+import jsonData from "../../data.json";
 
 
 function ProductsPage() {
@@ -10,6 +10,8 @@ function ProductsPage() {
     return (
       <div>
         <h1>IronStore</h1>
+        <ProductTable />
+        <SearchBar />
       </div>
     );
   }
